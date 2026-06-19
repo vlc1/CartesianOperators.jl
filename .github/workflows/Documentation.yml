@@ -14,12 +14,12 @@ jobs:
     name: Documentation
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
         with:
           path: StencilAssembly
       # StencilCore is unregistered; check it out as a sibling so the docs
       # `[sources]` path (../../StencilCore) resolves.
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
         with:
           repository: vlc1/StencilCore.jl
           path: StencilCore

@@ -31,13 +31,13 @@ jobs:
         arch:
           - x64
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
         with:
           path: StencilAssembly
       # StencilCore is unregistered; check it out as a sibling so the
       # StencilAssembly `[sources]` path (../StencilCore) resolves. Drop this
       # step once StencilCore is registered in a reachable registry.
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
         with:
           repository: vlc1/StencilCore.jl
           path: StencilCore
